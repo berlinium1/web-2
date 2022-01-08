@@ -1,0 +1,151 @@
+/* Flex-box main settings(directions, flexings, orders) */
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+body, #main, .logo, .articlepart, .container, article, header, footer, header div, footer div {
+    display: flex;
+    flex: 1;
+}
+
+.container {
+    flex-direction: column;
+}
+
+footer {
+    flex-direction: row-reverse;
+}
+    
+article, .logo, aside {
+    align-items: center;
+    flex-direction: column;
+}
+/* END */
+
+
+/* Alignings */
+header, footer {
+    align-items: center;
+    height: 20vh;
+}
+
+.push {
+    align-items: center;
+    text-align: right;
+}
+
+header .push {
+    margin-left: auto;
+}
+
+footer .push {
+    margin-right: auto;
+}
+
+article p {
+    align-self: baseline;
+}
+
+article div {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    flex-direction: column;
+}
+
+header div, footer div {
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 10%;
+    padding: .5em;
+}
+
+nav, aside {
+    flex: 0 0 20vw;
+}
+
+header, footer, article, nav, aside, .logo {
+    padding: 1em;
+}
+/* END */
+
+
+/* Stylizing */
+.container {
+    border-left: 2px dashed black;
+}
+
+#main {
+    border-left: 4px groove black;
+    border-right: 4px groove black;
+}
+
+.articlepart {
+    border-top: 2px dashed black;
+}
+
+/* article div {
+    border: 2px dashed rgb(18, 112, 136);
+}
+*/
+
+aside {
+    border-left: 2px dashed black;
+}
+
+header, footer {
+    background-color: rgb(115, 219, 115);
+    border: 4px groove black;
+}
+
+nav, aside {
+    background: beige;
+}
+
+header div, footer div {
+    background-color: aliceblue;
+}
+
+.push {
+    background-color: rgb(115, 219, 115);
+}
+/* END */
+
+
+/* Table settings */
+table {
+    border: 2px dashed rgb(18, 112, 136);
+}
+td { 
+    padding: 10px;
+}
+.name {
+background: #53f0bb;
+}
+.description {
+background: #f0f0f0;
+}
+.images {
+    width: 75px;
+    background: #ffffff;
+    color: #fff;
+}
+img.ph {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.sliderArticle {
+    max-width: 100%;
+    min-height: 90%;
+    bottom: 0%;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
